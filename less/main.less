@@ -1,0 +1,137 @@
+/* Main.less */
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+@font-family-sans-serif: 'Roboto', sans-serif;
+/*@headings-font-family: 'Great Vibes', cursive;*/
+@headings-color: @primary-color;
+
+/* Color scheme */
+
+@primary-color: #2574A9;
+@off-color: #f8f8f8;
+
+@navbar-default-bg: @primary-color;
+@navbar-default-color: @off-color;
+@navbar-default-link-color: @navbar-default-color;
+@navbar-default-link-active-color: darken(@navbar-default-color, 10%);
+
+@panel-default-heading-bg: @primary-color;
+
+.panel-heading {
+	color: @off-color !important;
+}
+
+
+/* Home layout */
+
+body {
+	background-color: lighten(@primary-color, 30%);
+	/*background: url(../img/blue-texture.jpg) no-repeat; /* https://www.flickr.com/photos/brenda-starr/5495670416 */
+	/*background: url(../img/blue-pastel.jpg);*/ /* https://www.flickr.com/photos/dominicotine/4727937035 */
+	/*background: url(../img/bug.jpg); /* https://www.flickr.com/photos/ilektrik/2716726154 */
+	/* 	background: url(../img/fun-colors.jpg); /* https://www.flickr.com/photos/fireflythegreat/6807147216 */
+	/*background: url(../img/flowers.jpg); /* https://www.flickr.com/photos/lauraesanchez/7943604220 */
+	/*background: url(../img/wave.jpg); /*https://www.flickr.com/photos/kellysmith/2477843609 */
+	background-size: 100%;
+}
+
+#page {
+	max-width: 960px;
+	margin-top: 20px;
+}
+
+.sliders {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background: #eee;
+	padding: 10px;
+	overflow: hidden;
+	z-index: -2;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	border-bottom: 0;
+	h1 {
+		margin-top: 10px;
+		margin-left: 10px;
+		text-shadow: 0px 0px 1px #333;
+	}
+	h2 {
+		margin-top: 0;
+		margin-left: 10px;
+		text-shadow: 0px 0px 1px #333;
+	}
+	img {
+		position: absolute;
+		top: -120px;
+		left: 0;
+		min-width: 100%;
+		width: 100%;
+		z-index: -1;
+		@media (max-width: @screen-sm) {
+			top: 0;
+		}
+		@media (max-width: @screen-xs) {
+			width: initial;
+			height: 100%;
+		}
+	}
+}
+
+.main {
+	/*.make-md-column(12); */
+	color: #333;
+}
+
+.content {
+	.panel;
+	.panel-default;
+	.panel-heading {
+		font-weight: bold;
+	}
+}
+
+.contact-sm {
+	@media (min-width: @screen-sm) {
+		display: none;
+	}
+	.panel;
+	.panel-default;
+	margin-bottom: 10px;
+	.panel-body {
+		text-align: center;
+	}
+}
+
+.contact {
+	@media (max-width: @screen-sm) {
+		display: none;
+	}
+	.panel;
+	.panel-default;
+	float: right;
+	margin: 6px;
+
+	.panel-heading {
+		font-weight: normal;
+	}
+}
+
+.doctor-photo {
+	float: left;
+	margin: 0 10px 0 0;
+	shape: circle();
+}
+
+.footer {
+	text-align: center;
+	background: rgba(37,116,169,.5);
+	color: @off-color;
+	margin: 20px 0;
+	min-height: 30px;
+}
