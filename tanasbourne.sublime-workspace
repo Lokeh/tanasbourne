@@ -24,18 +24,18 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "less/main.less",
 			"settings":
 			{
-				"buffer_size": 3336,
+				"buffer_size": 2053,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "less/main.less",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2762,
+				"buffer_size": 4765,
 				"line_ending": "Windows"
 			}
 		}
@@ -68,7 +68,15 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Will/Code/tanasbourne/less/resources.less",
+		"/C/Users/Will/Code/tanasbourne/resources.html",
+		"/C/Users/Will/Code/tanasbourne/less/afterhours.less",
+		"/C/Users/Will/Code/tanasbourne/afterhours.html",
+		"/C/Users/Will/Code/tanasbourne/less/home.less",
 		"/C/Users/Will/Code/tanasbourne/less/styles.less",
+		"/C/Users/Will/Code/tanasbourne/.git/config",
+		"/C/Users/Will/Code/armbar/index.php",
+		"/C/Users/Will/Code/armbar/page.php",
 		"/C/Users/Will/Code/tanasbourne/less/main.less",
 		"/C/Users/Will/Code/tanasbourne/index.html",
 		"/C/Users/Will/Code/tanasbourne/less/bootstrap/bootstrap.less",
@@ -134,6 +142,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"darken",
 			"break-medium",
 			"big-img",
 			"border-",
@@ -163,18 +172,45 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "less/main.less",
 					"settings":
 					{
-						"buffer_size": 3336,
+						"buffer_size": 2053,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1629,
-								1629
+								1456,
+								1332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 645.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 4765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
 							]
 						],
 						"settings":
@@ -184,33 +220,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "less/main.less",
-					"settings":
-					{
-						"buffer_size": 2762,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1797,
-								1797
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 660.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
