@@ -3,6 +3,15 @@
 
 .sliders {
 	img {
-		top: -275px;
+		@media (min-width: @screen-xs) {
+			top: 0px;
+		}
+		@media (min-width: @screen-sm) {
+			top: -100px;
+			height: initial;
+		}
+		@media (min-width: @screen-md) {
+			top: -275px;
+		}
 	}
 }
