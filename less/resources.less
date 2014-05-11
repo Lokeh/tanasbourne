@@ -1,5 +1,5 @@
-/* Main.less */
-
+/* Resources.less */
+@import 'bootstrap/bootstrap.less';
 /* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
@@ -29,12 +29,6 @@
 
 body {
 	background-color: lighten(@primary-color, 30%);
-	/*background: url(../img/blue-texture.jpg) no-repeat; /* https://www.flickr.com/photos/brenda-starr/5495670416 */
-	/*background: url(../img/blue-pastel.jpg);*/ /* https://www.flickr.com/photos/dominicotine/4727937035 */
-	/*background: url(../img/bug.jpg); /* https://www.flickr.com/photos/ilektrik/2716726154 */
-	/* 	background: url(../img/fun-colors.jpg); /* https://www.flickr.com/photos/fireflythegreat/6807147216 */
-	/*background: url(../img/flowers.jpg); /* https://www.flickr.com/photos/lauraesanchez/7943604220 */
-	/*background: url(../img/wave.jpg); /*https://www.flickr.com/photos/kellysmith/2477843609 */
 	background-size: 100%;
 }
 
@@ -61,15 +55,15 @@ h1, h2 {
 	width: 100%;
 	height: 250px;
 	background: #eee;
+	z-index: -2;
 	padding: 10px;
 	overflow: hidden;
-	z-index: -2;
 	border: 1px solid transparent;
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 	img {
 		position: absolute;
-		top: -120px;
+		top: -275px;
 		left: 0;
 		min-width: 100%;
 		width: 100%;
