@@ -6,7 +6,7 @@
 
 @font-family-sans-serif: 'Roboto', sans-serif;
 /*@headings-font-family: 'Great Vibes', cursive;*/
-@headings-color: @primary-color;
+@headings-color: #fff;
 
 /* Color scheme */
 
@@ -38,6 +38,19 @@ body {
 	background-size: 100%;
 }
 
+h1, h2 {
+	margin: 0;
+	text-shadow: 1px 1px 1px #333;
+	margin-left: 14px;
+}
+
+.headings {
+	background-color: @primary-color;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding: 10px;
+}
+
 #page {
 	max-width: 960px;
 	margin-top: 20px;
@@ -52,20 +65,9 @@ body {
 	overflow: hidden;
 	z-index: -2;
 	border: 1px solid transparent;
-	border-radius: 4px;
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 	border-bottom: 0;
-	h1 {
-		margin-top: 10px;
-		margin-left: 10px;
-		text-shadow: 0px 0px 1px #333;
-	}
-	h2 {
-		margin-top: 0;
-		margin-left: 10px;
-		text-shadow: 0px 0px 1px #333;
-	}
 	img {
 		position: absolute;
 		top: -120px;
@@ -84,9 +86,17 @@ body {
 }
 
 .main {
-	/*.make-md-column(12); */
+	.make-md-column(12);
 	color: #333;
+	padding-right:0px;
+	padding-left: 0px;
 }
+
+/*.sidebar {
+	.make-md-column(4);
+	padding-right: 0px;
+	padding-left:7px;
+}*/
 
 .content {
 	.panel;
@@ -116,10 +126,19 @@ body {
 	.panel-default;
 	float: right;
 	margin: 6px;
-
 	.panel-heading {
 		font-weight: normal;
 	}
+	.panel-body {
+		padding-bottom: 0;
+	}
+	max-width: 258px;
+}
+
+.right-img {
+	float:right;
+	max-width:335px;
+	margin: 10px;
 }
 
 .doctor-photo {
@@ -129,9 +148,10 @@ body {
 }
 
 .footer {
+	clear: both;
 	text-align: center;
 	background: rgba(37,116,169,.5);
 	color: @off-color;
-	margin: 20px 0;
+	margin: 20px 0 0 0;
 	min-height: 30px;
 }

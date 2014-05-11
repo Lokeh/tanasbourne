@@ -27,7 +27,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2402,
+				"buffer_size": 3336,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/main.less",
+			"settings":
+			{
+				"buffer_size": 2762,
 				"line_ending": "Windows"
 			}
 		}
@@ -150,7 +158,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -158,15 +166,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2402,
+						"buffer_size": 3336,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								317,
-								317
+								1629,
+								1629
 							]
 						],
 						"settings":
@@ -176,6 +184,33 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "less/main.less",
+					"settings":
+					{
+						"buffer_size": 2762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1797,
+								1797
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
