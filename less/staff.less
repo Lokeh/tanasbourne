@@ -1,0 +1,68 @@
+/* staff.less */
+@import 'styles.less';
+
+
+.column {
+	width: 24%;
+	display: inline-table;
+}
+
+.profile {
+	position: relative;
+	width: 180px;
+	text-align: center;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	padding: 5px;
+	margin:15px;
+	background: rgba(255,255,255,.8);
+}
+
+.profile img {
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	margin: 10px;
+	box-shadow: 0px 1px 1px rgba(0,0,0,.5);
+}
+
+.profile p {
+	margin: 5px;
+}
+
+.profile img + p {
+	font-size: 1.2em;
+}
+
+.toggle {
+	display: inline-block;
+	width: 80%;
+	background: #2c3e50;
+	border-radius: 5px;
+	box-shadow: 0px 3px 1px #333;
+	text-decoration: none;
+	color: #fff;
+	height: 25px;
+	margin-bottom: 7px;
+	padding-top: 5px;
+}
+
+.toggle:link, .toggle:hover, .toggle:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.toggle:active {
+	box-shadow: none;
+	margin-top: 3px;
+	margin-bottom: 4px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.about {
+	margin-top: 0;
+	display: none;
+	padding: 7px;
+}
