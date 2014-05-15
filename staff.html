@@ -51,9 +51,23 @@
 								<a href="javascript:void(0);" class="toggle">About</a>
 								<p class="about">Here is a brief description about the agent in question. In case you wanted to read something actually interesting... too bad! Lorem ipsum kali maa ipso facto wingardium leviosa.</p>
 							</div>
+							<div class="profile-wide" style="display: none;">
+								<div class="info">
+									<img src="blank-profile-md.png" /> <!-- http://uifaces.com/ -->
+									<p>Smith Jones</p>
+									<p>Doctor, PhD, MBR, UFC</p>
+									<p>503-123-4567 ext. 001</p>
+								</div>
+								<div class="about">
+									<p>Fashion axe kogi cray, ethical selvage blog mixtape Austin lomo 3 wolf moon vinyl Intelligentsia mlkshk letterpress. Banksy Carles butcher put a bird on it meh PBR&B. Skateboard pork belly put a bird on it tofu. Pickled umami pug food truck single-origin coffee. Meggings pour-over cardigan swag ethnic, retro put a bird on it disrupt Cosby sweater flannel Etsy shabby chic PBR gluten-free. Vice Williamsburg trust fund food truck cornhole American Apparel fanny pack bespoke, selfies vegan +1 synth iPhone craft beer. Ugh Pitchfork art party Kickstarter, scenester slow-carb fashion axe lo-fi.</p>
+
+									<p>Keffiyeh next level Pinterest, ethical literally Etsy Vice disrupt pork belly organic 8-bit freegan post-ironic pickled brunch. Selfies flexitarian Etsy Bushwick hoodie, typewriter Kickstarter Austin Schlitz meggings farm-to-table pork belly fashion axe. VHS before they sold out Portland normcore hoodie synth. Kogi hashtag Kickstarter keffiyeh skateboard, hella scenester normcore post-ironic deep v locavore ugh. Food truck cray Tonx American Apparel, VHS kale chips Intelligentsia synth you probably haven't heard of them street art. Direct trade narwhal pour-over, vegan vinyl Tumblr hashtag chambray. Cardigan mustache fixie cliche ethnic.</p>
+								</div>
+								<p><a href="javascript:void(0);" class="wide-toggle">Go Back</a></p>
+							</div>
 							<div class="profile">
 								<img src="blank-profile-md.png" />
-								<p>Andrea Johnson</p>
+								<p>Smith Jones</p>
 								<a href="javascript:void(0);" class="toggle">About</a>
 								<p class="about">Here is a brief description about the agent in question. In case you wanted to read something actually interesting... too bad! Lorem ipsum kali maa ipso facto wingardium leviosa.</p>
 							</div>
@@ -62,12 +76,6 @@
 							<div class="profile">
 								<img src="blank-profile-md.png" />
 								<p>Andrea Johnson</p>
-								<a href="javascript:void(0);" class="toggle">About</a>
-								<p class="about">Here is a brief description about the agent in question. In case you wanted to read something actually interesting... too bad! Lorem ipsum kali maa ipso facto wingardium leviosa.</p>
-							</div>
-							<div class="profile">
-								<img src="blank-profile-md.png" />
-								<p>Smith Jones</p>
 								<a href="javascript:void(0);" class="toggle">About</a>
 								<p class="about">Here is a brief description about the agent in question. In case you wanted to read something actually interesting... too bad! Lorem ipsum kali maa ipso facto wingardium leviosa.</p>
 							</div>
@@ -101,11 +109,13 @@
 		<script>
 		$(document).ready(function() {
 			$('.toggle').on('click', function () {
-				$(this).text(function (_, currentText) {
-					return currentText === 'About' ? 'Hide' : 'About';
-				});
-				$(this).next('.about').toggle("fast","linear");
-				//$(this).parent().next().toggle("linear");
+				if ($(this).parent().next().attr('class') === 'profile-wide') { $('.profile').toggle("fast","swing"); }
+				$(this).parent().next('.profile-wide').toggle("slow","linear");
+			});
+			
+			$('.wide-toggle').on('click', function () {
+				$(this).closest('.profile-wide').hide();
+				$('.profile').show("slow","swing");
 			});
 		});
 		</script>
