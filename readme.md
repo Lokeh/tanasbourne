@@ -1,6 +1,5 @@
 To Do
 ==========
-	- Staff about
 	- Header: different font, heavier line-height
 	- Use all layout as function (header)
 	- Doctor names on front page
@@ -11,3 +10,7 @@ To Do
 		- left-align text w/ padding
 	- Buy stock images
 	- Compile less, clean up CSS/HTML and ready for upload
+
+Done
+==========
+	- Staff about (6/22) - 1 hr
