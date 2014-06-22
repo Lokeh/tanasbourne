@@ -1,20 +1,44 @@
 /* staff.less */
 @import 'styles.less';
 
+.profile-container {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
 
 .column {
-	width: 24%;
+	width: 100%;
+
+	@media (min-width: @screen-sm){
+		width: 45%;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 	display: inline-table;
+	margin: 0 auto;
 }
 
 .profile {
 	position: relative;
-	width: 180px;
+	width: 100%;
+	/*@media (min-width: @screen-sm) {
+		width: 300px;
+	}*/
 	text-align: center;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	/*box-shadow: 1px 1px 1px rgba(0,0,0,.25);*/
 	padding: 5px;
-	margin:15px;
+	margin:0 auto 15px;
 	background: rgba(255,255,255,.8);
+	border: 1px solid rgba(0,0,0,.1);
+
+	.name {
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	hr {
+		margin: 5px;
+	}
 }
 
 .profile img {
@@ -63,6 +87,6 @@
 
 .about {
 	margin-top: 0;
-	display: none;
+	/*display: none;*/
 	padding: 7px;
 }
