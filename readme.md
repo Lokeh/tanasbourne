@@ -1,7 +1,6 @@
 To Do
 ==========
-	- Refactor 'slider' code to not use absolute positioning
-	- Use all layout as function (header)
+	- mobile hamburger menu
 	- Buy stock images
 	- Compile less, clean up CSS/HTML and ready for upload
 
@@ -12,4 +11,6 @@ Done
 	- Doctor names on front page (6/22) - .25 hr
 	- contact us: structure hours better (6/22) - .25 hr
 	- Sub-heading should be 1/2 as small (6/22) - 0 hr
+	- Refactor 'slider' code to not use absolute positioning (6/22) - .5 hr
+	- Use all layout as function (header) (6/22) - 1 hr
 
