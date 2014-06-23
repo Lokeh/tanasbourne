@@ -95,6 +95,21 @@ h3 {
 	}
 }
 
+.header {
+	background-image: url('/img/Happy-mother-presses-the-baby-to-a-breast.jpg');
+	background-position: 0px 0px;
+	height: 250px;
+	background-size: 150%;
+	@media (min-width: @screen-sm) {
+		background-size: 100%;
+		background-position: 0px -112px;
+	}
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
 .main {
 	.make-md-column(12);
 	color: #333;
